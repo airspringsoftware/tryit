@@ -52,7 +52,7 @@ var options = { method: 'POST',
      phone: '(859) 309-6347' },
   json: true };
 ```
-> Replace company and email in the body portiion of the request
+> Replace company and email in the body portion of the request
 
 **5. Run Node example:**
 ```sh
