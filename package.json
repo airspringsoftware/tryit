@@ -1,0 +1,16 @@
+{
+  "name": "tryit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tryit.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "airSpring Software",
+  "license": "MIT",
+  "devDependencies": {
+    "fs": "0.0.1-security",
+    "open": "0.0.5",
+    "request": "^2.79.0"
+  }
+}
