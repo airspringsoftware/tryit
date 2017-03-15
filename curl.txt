@@ -1,0 +1,8 @@
+curl -X GET -H "Content-Type: application/json" -H "Cache-Control: no-cache" -H "Postman-Token: 8ca7e211-9eb0-f026-ab32-561d41596ed6" "https://tryit.airspringsoftware.com:6001/marketing/api/overview.json?company=test&email=test@test.com&address=test%20company%20address&phone=555-555-5555"
+
+curl -X POST -H "Content-Type: application/json" -H "Cache-Control: no-cache" -H "Postman-Token: acdb392a-f153-c5a0-237d-bc438f43c607" -d '{
+    "company": "airSpring Software",
+    "email": "sales@airspringsoftware.com",
+    "address": "2365 Harrodsburg Rd 2365 Harrodsburg Rd, Lexington, KY 40504",
+    "phone": "(859) 309-6347"
+}' "https://tryit.airspringsoftware.com/marketing/api/overview.json"
