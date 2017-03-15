@@ -54,7 +54,7 @@ var options = { method: 'POST',
 ```
 > Replace company and email in the body portion of the request
 
-**5. Run Node example:**
+**6. Run Node example:**
 ```sh
 node tryit.js
 ```
