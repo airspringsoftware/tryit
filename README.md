@@ -6,3 +6,7 @@ document microservice
     ```shell
     npm install
     ```
+2.  Run Sample
+    ```shell
+    node tryit.js
+    ```
