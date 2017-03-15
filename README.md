@@ -1,5 +1,5 @@
 # tryit
-document microservice
+Document microservice
 
 ## Installation
 
