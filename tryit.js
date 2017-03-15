@@ -65,8 +65,7 @@ var download = function(url, dest, cb) {
 var options = { method: 'POST',
   url: 'https://tryit.airspringsoftware.com/marketing/api/overview.json',
   headers: 
-   { 'postman-token': '432fb733-be44-4f4b-03d4-22d530587921',
-     'cache-control': 'no-cache',
+   { 'cache-control': 'no-cache',
      'content-type': 'application/json' },
   body: 
    { company: 'airSpring Software',
