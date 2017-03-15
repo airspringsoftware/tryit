@@ -36,9 +36,9 @@ curl -X GET -H "Content-Type: application/json" -H "Cache-Control: no-cache" -H 
 ```
 > Replace company and email in the preceeding curl example
 
-**5. Node example:**
+**5. Node tryit.js example:**
 
-```tryit.js
+```js
 var options = { method: 'POST',
   url: 'https://tryit.airspringsoftware.com/marketing/api/overview.json',
   headers: 
