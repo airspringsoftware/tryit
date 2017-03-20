@@ -32,7 +32,7 @@ npm install
 **4. Curl Example:**
 
 ```sh
-curl -X GET -H "Content-Type: application/json" -H "Cache-Control: no-cache" "https://tryit.airspringsoftware.com:6001/marketing/api/overview.json?company=your_company_name&email=your_email_address&address=your_company_address&phone=your_phone_number"
+curl -X GET -H "Content-Type: application/json" -H "Cache-Control: no-cache" "https://tryit.airspringsoftware.com/marketing/api/overview.json?company=your_company_name&email=your_email_address&address=your_company_address&phone=your_phone_number"
 ```
 > Replace company and email in the preceeding curl example
 
