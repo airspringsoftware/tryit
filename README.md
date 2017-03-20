@@ -1,5 +1,8 @@
 # tryit
-Document Microservice
+
+Example microservice to show airSpring Software create and return a customized PDF document (via POST).  Or, pass and retrieve data (via GET).
+
+airSpring is a visual design tool that lets you create variable documents (reports, brochures, correspondence, etc), manipulate data or mapreduce, or interactive applications and publish with a web service end point.
 
 ## Installation
 
