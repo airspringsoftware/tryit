@@ -78,7 +78,7 @@ request(options, function (error, response, body) {
   if (error) throw new Error(error);
   console.log(body);
   
-  var url = "https://tryit.airspringsoftware.com:6001" + body.response.pdfRoute;
+  var url = body.response.pdfRoute;
   
   download(url, "tryit.pdf", function() {
       console.log("Downloaded pdf: tryit.pdf")
