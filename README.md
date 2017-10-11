@@ -1,69 +1,48 @@
 # tryit
-Example microservice to show airSpring Software create and return a customized PDF document (via POST).  Or, pass and retrieve data (via GET).
 
-airSpring is a visual design tool that lets you create variable documents (reports, brochures, correspondence, etc), manipulate data or mapreduce, or interactive applications and publish with a web service end point.
+Example microservice to show airSpring Software create and return a customized PDF document (via POST).  Or, pass and retrieve data (via GET).  The PDF generated from this service was designed and built using airSpring's Designer.
 
-## Installation
+airSpring is a visual design tool that lets you create variable documents (reports, brochures, correspondence, etc), manipulate data or map-reduce, build interactive applications and publish with a web service end point.
 
-**1. Clone this repo:**
+## Quick Start
+
+**1. Clone and Setup:**
 
 ```sh
 git clone https://github.com/airspringsoftware/tryit.git demo
 cd demo
-```
-**2. Make it your own:**
-
-```sh
-rm -rf .git && git init && npm init
-```
-
-> :information_source: This re-initializes the repo and sets up your NPM project.
-
-
-**3. Install the dependencies:**
-
-```sh
 npm install
 ```
 
-> You're done installing! 
+**2. Customize the Arguments:**
+
+Open up `tryit.js` and make any changes to the `postParams` object.  Changing the
+company and email address to your own will customize the generated PDF with
+your own data.
 
 ## Demo Workflow
 
+If you look at the `tryit.js` file you'll see all it's doing is making an HTTP POST request
+and then downloading the PDF file from the path that's returned from the service.  You can
+see the same results by using cURL to post data to our service.
 
-**4. Curl Example:**
+**3. Curl Example:**
 
 ```sh
-curl -X GET -H "Content-Type: application/json" -H "Cache-Control: no-cache" "https://tryit.airspringsoftware.com/marketing/api/overview.json?company=your_company_name&email=your_email_address&address=your_company_address&phone=your_phone_number"
+curl -X POST \
+"https://tryit.airspringsoftware.com/marketing/api/overview.json" \
+-H "Cache-Control: no-cache" \
+-H "Content-Type: application/json" \
+-d '{ "company": "Your-Company", "email": "Your-Email" }'
 ```
-> Replace company and email in the preceeding curl example
 
-**5. Node tryit.js example:**
+**4. Node tryit.js example:**
 
-```js
-var options = { method: 'POST',
-  url: 'https://tryit.airspringsoftware.com/marketing/api/overview.json',
-  headers: 
-   { 'cache-control': 'no-cache',
-     'content-type': 'application/json' },
-  body: 
-   { company: 'airSpring Software',
-     email: 'sales@airspringsoftware.com',
-     address: '2365 Harrodsburg Rd 2365 Harrodsburg Rd, Lexington, KY 40504',
-     phone: '(859) 309-6347' },
-  json: true };
-```
-> Replace company and email in the body portion of the request
+After you've made a few changes the the `postParams` object in `tryit.js` you
+can run `node tryit.js` to run the demo.  This will post the params you've specified
+to our demo service.  The PDF downloaded will include the data you've posted.
 
-**6. Run Node example:**
-```sh
-node tryit.js
-```
 
 ---
-
-
 ## License
-
 MIT
-
