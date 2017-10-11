@@ -1,6 +1,6 @@
 # tryit
 
-Example microservice to show airSpring Software create and return a customized PDF document (via POST).  Or, pass and retrieve data (via GET).  The PDF generated from this service was designed and built using airSpring's Designer.
+Example service to demonstrate how airSpring Software creates and returns customized PDF documents (via POST).  The PDF generated from this service was designed and built using airSpring's Designer.
 
 The airSpring low-code platform makes it easy for developers to build and run applications, API’s, and services to automate customer-facing forms and document  processes.
 
