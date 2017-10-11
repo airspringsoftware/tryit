@@ -2,7 +2,7 @@
 
 Example microservice to show airSpring Software create and return a customized PDF document (via POST).  Or, pass and retrieve data (via GET).  The PDF generated from this service was designed and built using airSpring's Designer.
 
-airSpring is a visual design tool that lets you create variable documents (reports, brochures, correspondence, etc), manipulate data or map-reduce, build interactive applications and publish with a web service end point.
+The airSpring low-code platform makes it easy for developers to build and run applications, API’s, and services to automate customer-facing forms and document  processes.
 
 ## Quick Start
 
